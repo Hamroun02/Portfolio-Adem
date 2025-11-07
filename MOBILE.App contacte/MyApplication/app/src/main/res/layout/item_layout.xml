@@ -1,0 +1,73 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:background="@drawable/rounded_background">
+
+
+    <ImageView
+        android:id="@+id/contact_avatar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="Avatar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icons8_google_contacts_96" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom du Contact"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/contact_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+216 123 456 789"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/msg"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Send Message"
+                android:src="@drawable/email_envelope_inbox_mail_message_send_svgrepo_com" />
+
+
+            <ImageView
+                android:id="@+id/call"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="Call"
+                android:src="@drawable/phone_call_svgrepo_com__1_" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

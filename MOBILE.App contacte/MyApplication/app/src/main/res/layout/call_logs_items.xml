@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription=""
+        android:src="@drawable/icons8_google_contacts_96" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="adem"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/TypeIcon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/phone_call_svgrepo_com" />
+
+
+            <TextView
+                android:id="@+id/callType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OUTGOING"
+                android:textColor="#4CAF50"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/callDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="2021/09/18 20:52:03"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/missedCalls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        android:textColor="#FF0000"
+        android:textSize="14sp" />
+
+
+    <ImageView
+        android:id="@+id/callActionIconRight"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/phone_call_svgrepo_com__1_" />
+</LinearLayout>
